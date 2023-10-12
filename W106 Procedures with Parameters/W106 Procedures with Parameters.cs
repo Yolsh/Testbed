@@ -14,11 +14,14 @@ namespace W106_Procedures_with_Parameters
             Console.WriteLine(result);
         }
 
-        static void DisplaySymbols(int across, char UserSymbol)
+        static void DisplaySymbols(int across, char UserSymbol, int down)
         {
             for (int i = 0; i < across; i++)
             {
-                Console.Write(UserSymbol);
+                for (int j = 0; j < down; j++)
+                {
+                    Console.Write(UserSymbol);
+                }
             }
         }
 
