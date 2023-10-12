@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EFF8049F-6450-4397-8EF1-9C949B9D3A38}</ProjectGuid>
+    <ProjectGuid>{57B894A5-C83B-46B7-85A3-93A126ECD0CB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>W100</RootNamespace>
-    <AssemblyName>W100</AssemblyName>
+    <RootNamespace>L111_Subroutines</RootNamespace>
+    <AssemblyName>L111_Subroutines</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="W100.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
