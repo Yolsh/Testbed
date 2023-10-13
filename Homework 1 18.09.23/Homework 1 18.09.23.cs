@@ -20,7 +20,7 @@ namespace Homework_1_18._09._23
             int ans_mult = num1 * num2;
             int ans_fin = (ans_add + ans_mult);
 
-            Console.WriteLine("the sum of those numbers is " + ans);
+            Console.WriteLine("the sum of those numbers is " + ans_fin);
 
             Console.ReadKey();
 
