@@ -7,7 +7,7 @@
     <ProjectGuid>{57B894A5-C83B-46B7-85A3-93A126ECD0CB}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>L111_Subroutines</RootNamespace>
-    <AssemblyName>L111_Subroutines</AssemblyName>
+    <AssemblyName>L111 Subroutines</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="L111 Subroutiones.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

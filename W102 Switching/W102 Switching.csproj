@@ -7,7 +7,7 @@
     <ProjectGuid>{87C13612-87A0-4A4C-B5CC-CA247C53E4C3}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>W102_Switching</RootNamespace>
-    <AssemblyName>W102_Switching</AssemblyName>
+    <AssemblyName>W102 Switching</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="W102 Switching.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
