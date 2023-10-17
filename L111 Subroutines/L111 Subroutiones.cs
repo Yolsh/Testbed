@@ -77,7 +77,7 @@ namespace L111_Subroutines
             void total()
             {
                 int totals = Num1 + Num2 + Num3 + Num4;
-                Console.WriteLine("the total of those is " + totals)
+                Console.WriteLine("the total of those is " + totals);
             }
 
             void Average()
@@ -93,8 +93,8 @@ namespace L111_Subroutines
                         break;
 
                     case "Median":
-
-                        Console.WriteLine("the Average of those is " + Median);
+                        //Console.WriteLine("the Average of those is " + Median);
+                        break;
                 }
             }
 
