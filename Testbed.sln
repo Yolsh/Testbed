@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L116 Debugging", "L116 Debu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W108", "W108\W108.csproj", "{FEFBB4DB-8DAB-4EA6-B16B-0E18A69BBC8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L118 Parralel Arrays", "L118 Parralel Arrays\L118 Parralel Arrays.csproj", "{7BBC8989-6870-4E2A-81F9-06523646D266}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W109 Lists", "W106 Lists\W109 Lists.csproj", "{3D03BFBE-962A-4D96-BF45-F43902BF4944}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{FEFBB4DB-8DAB-4EA6-B16B-0E18A69BBC8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEFBB4DB-8DAB-4EA6-B16B-0E18A69BBC8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEFBB4DB-8DAB-4EA6-B16B-0E18A69BBC8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BBC8989-6870-4E2A-81F9-06523646D266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BBC8989-6870-4E2A-81F9-06523646D266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BBC8989-6870-4E2A-81F9-06523646D266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BBC8989-6870-4E2A-81F9-06523646D266}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D03BFBE-962A-4D96-BF45-F43902BF4944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D03BFBE-962A-4D96-BF45-F43902BF4944}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D03BFBE-962A-4D96-BF45-F43902BF4944}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D03BFBE-962A-4D96-BF45-F43902BF4944}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
