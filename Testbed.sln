@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L118 Parralel Arrays", "L11
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W109 Lists", "W106 Lists\W109 Lists.csproj", "{3D03BFBE-962A-4D96-BF45-F43902BF4944}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W110 Functions", "W110 Functions\W110 Functions.csproj", "{DC0A2AAA-036F-4D30-A649-34B91901534F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{3D03BFBE-962A-4D96-BF45-F43902BF4944}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D03BFBE-962A-4D96-BF45-F43902BF4944}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D03BFBE-962A-4D96-BF45-F43902BF4944}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC0A2AAA-036F-4D30-A649-34B91901534F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC0A2AAA-036F-4D30-A649-34B91901534F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC0A2AAA-036F-4D30-A649-34B91901534F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC0A2AAA-036F-4D30-A649-34B91901534F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
