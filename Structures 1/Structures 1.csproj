@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DC0A2AAA-036F-4D30-A649-34B91901534F}</ProjectGuid>
+    <ProjectGuid>{72A69148-ACCA-43B5-90CE-454B7C6B8B86}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>W110_Functions</RootNamespace>
-    <AssemblyName>W110 Functions</AssemblyName>
+    <RootNamespace>Structures_1</RootNamespace>
+    <AssemblyName>Structures 1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="W110 Functions.cs" />
+    <Compile Include="Structures 1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DC0A2AAA-036F-4D30-A649-34B91901534F}</ProjectGuid>
+    <ProjectGuid>{8FA91781-B465-4ED8-9FF3-9FCAC22978A5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>W110_Functions</RootNamespace>
-    <AssemblyName>W110 Functions</AssemblyName>
+    <RootNamespace>W112_Reading_Text_Files</RootNamespace>
+    <AssemblyName>W112 Reading Text Files</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="W110 Functions.cs" />
+    <Compile Include="W112 Reading Text Files.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
