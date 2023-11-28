@@ -41,6 +41,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W112 Reading Text Files", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W113", "W113\W113.csproj", "{0495DC4A-8C0C-418D-A520-B9717433228A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code comparison", "Code comparison\Code comparison.csproj", "{F926696C-0673-4C4C-AD3D-7856F76CEF7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "check check", "check check\check check.csproj", "{A20650B8-926C-4CF4-A70A-24A6C45BFE13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +127,14 @@ Global
 		{0495DC4A-8C0C-418D-A520-B9717433228A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0495DC4A-8C0C-418D-A520-B9717433228A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0495DC4A-8C0C-418D-A520-B9717433228A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F926696C-0673-4C4C-AD3D-7856F76CEF7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F926696C-0673-4C4C-AD3D-7856F76CEF7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F926696C-0673-4C4C-AD3D-7856F76CEF7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F926696C-0673-4C4C-AD3D-7856F76CEF7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A20650B8-926C-4CF4-A70A-24A6C45BFE13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A20650B8-926C-4CF4-A70A-24A6C45BFE13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A20650B8-926C-4CF4-A70A-24A6C45BFE13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A20650B8-926C-4CF4-A70A-24A6C45BFE13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
