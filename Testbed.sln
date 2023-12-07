@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L129", "L129\L129.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L130 Sabotage", "L130 Sabotage\L130 Sabotage.csproj", "{A44F80A7-3F20-407A-A0F5-46FF08FDAD57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W114 arrays of structures", "W114 arrays of structures\W114 arrays of structures.csproj", "{50DD4CF0-0975-4917-97EA-F65F550C808E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{A44F80A7-3F20-407A-A0F5-46FF08FDAD57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A44F80A7-3F20-407A-A0F5-46FF08FDAD57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A44F80A7-3F20-407A-A0F5-46FF08FDAD57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50DD4CF0-0975-4917-97EA-F65F550C808E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50DD4CF0-0975-4917-97EA-F65F550C808E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50DD4CF0-0975-4917-97EA-F65F550C808E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50DD4CF0-0975-4917-97EA-F65F550C808E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
