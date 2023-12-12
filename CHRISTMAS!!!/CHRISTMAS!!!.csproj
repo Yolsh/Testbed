@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{701C5942-06D3-458A-B793-89E81D050EAD}</ProjectGuid>
+    <ProjectGuid>{E22068D2-CA9F-4D06-BDA5-F67B631DB2A5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>L132</RootNamespace>
-    <AssemblyName>L132</AssemblyName>
+    <RootNamespace>CHRISTMAS___</RootNamespace>
+    <AssemblyName>CHRISTMAS!!!</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="L132.cs" />
+    <Compile Include="CHRISTMAS!!!.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
