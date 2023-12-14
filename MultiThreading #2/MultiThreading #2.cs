@@ -34,7 +34,7 @@ namespace MultiThreading__2
             Console.WriteLine(Process.GetCurrentProcess().Threads.Count); //  prints the number of threads available (atm its 7)
                                                                          //   this means we can run up to 7 processes simultaneously although its a good idea not to run that many at the same time
 
-            for (int i = 2; i < 9999; i+=5)
+            for (int i = 2; i < 999; i+=5)
             {
                 Thread thread1 = new Thread(() => PrimeNumbers(i, "thread1")); thread1.Start(); // invoke the threads and start them
                 Thread thread2 = new Thread(() => PrimeNumbers(i + 1, "thread2")); thread2.Start();
