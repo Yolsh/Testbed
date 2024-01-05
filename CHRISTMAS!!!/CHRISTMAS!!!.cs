@@ -10,6 +10,12 @@ namespace CHRISTMAS___
 {
     internal class Program
     {
+        struct snowPoint
+        {
+            public string value;
+            public int top;
+            public int left;
+        }
         static void Main(string[] args)
         {
             PlaceTree();
@@ -69,13 +75,25 @@ namespace CHRISTMAS___
 
         static void Snow()
         {
+            List<snowPoint> snow = new List<snowPoint>();
             Random rnd = new Random();
-            while (true) 
+            while (true)
             {
+                snowPoint NewSnow = new snowPoint();
                 int RandSnow = rnd.Next(Console.WindowWidth);
-                Console.SetCursorPosition(Console.WindowWidth - 1 - RandSnow, 0);
-                Console.Write('.');
-                Thread.Sleep(50);
+                NewSnow.value = ".";
+                NewSnow.top = 0;
+                NewSnow.left = RandSnow;
+                snow.Add(NewSnow);
+                ShowSnow();
+            }
+        }
+
+        static void ShowSnow(List<snowPoint> allSnow)
+        {
+            foreach (snowPoint currentSnow in allSnow)
+            {
+
             }
         }
     }

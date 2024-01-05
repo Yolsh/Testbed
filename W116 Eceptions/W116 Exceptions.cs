@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 
 namespace W116_Eceptions
 {
+    public class UserException : Exception
+    {
+        public UserException(string message = "That's not a user!") : base(message) { }
+    }
+
     internal class Program
     {
         static void Main(string[] args)
