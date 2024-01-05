@@ -7,7 +7,7 @@
     <ProjectGuid>{90CDBB51-0D84-4AB0-88E5-954BF5EBD06F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>W116_Eceptions</RootNamespace>
-    <AssemblyName>W116_Eceptions</AssemblyName>
+    <AssemblyName>W116 Eceptions</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="W116 Exceptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
