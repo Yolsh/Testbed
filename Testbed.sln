@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CHRISTMAS!!!", "CHRISTMAS!!
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W116 Exceptions", "W116 Eceptions\W116 Exceptions.csproj", "{90CDBB51-0D84-4AB0-88E5-954BF5EBD06F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A121", "A121\A121.csproj", "{762A6DD2-21E0-464F-A700-4E46F1D876BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,10 @@ Global
 		{90CDBB51-0D84-4AB0-88E5-954BF5EBD06F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90CDBB51-0D84-4AB0-88E5-954BF5EBD06F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90CDBB51-0D84-4AB0-88E5-954BF5EBD06F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{762A6DD2-21E0-464F-A700-4E46F1D876BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{762A6DD2-21E0-464F-A700-4E46F1D876BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{762A6DD2-21E0-464F-A700-4E46F1D876BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{762A6DD2-21E0-464F-A700-4E46F1D876BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
