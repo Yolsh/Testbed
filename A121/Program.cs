@@ -55,7 +55,7 @@ namespace A121
 
         static void Q2()
         {
-            int[,] hello = new int[4, 4];
+            int[,] DisplayArray = new int[4, 4];
         }
     }
 }
