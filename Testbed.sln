@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A121", "A121\A121.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warships PreLim", "Warships PreLim\Warships PreLim.csproj", "{3D668935-BE6F-483E-AE9A-13AC5331DECA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W122 warsip modified", "W122 warsip modified\W122 warsip modified.csproj", "{05A5D8F0-80E1-4BAD-BD61-F919196EC6C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -177,6 +179,10 @@ Global
 		{3D668935-BE6F-483E-AE9A-13AC5331DECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D668935-BE6F-483E-AE9A-13AC5331DECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D668935-BE6F-483E-AE9A-13AC5331DECA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05A5D8F0-80E1-4BAD-BD61-F919196EC6C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05A5D8F0-80E1-4BAD-BD61-F919196EC6C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05A5D8F0-80E1-4BAD-BD61-F919196EC6C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05A5D8F0-80E1-4BAD-BD61-F919196EC6C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
