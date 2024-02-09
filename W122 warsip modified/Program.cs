@@ -6,6 +6,7 @@
 
 using System;
 using System.IO;
+using System.Text.RegularExpressions;
 
 class Program
 {
@@ -16,19 +17,28 @@ class Program
     }
 
     const string TrainingGame = "Training.txt";
+    const int ShipNumber = 7;
+    const int BoardSizeX = 10;
+    const int BoardSizeY = 10;
 
     private static void GetRowColumn(ref int Row, ref int Column)
     {
         do
         {
             Console.Write("Please enter column: ");
-            Column = Convert.ToInt32(Console.ReadLine());
+            string ColumnStr = Console.ReadLine();
+            if (Regex.Match(ColumnStr, $"[0-{BoardSizeY - 1}]").Success) Column = Convert.ToInt32(ColumnStr);
+            else if (Regex.Match(ColumnStr, "[^\\d]").Success) Console.WriteLine("You're input must be a number");
+            else Console.WriteLine($"not a valid input [0-{BoardSizeY}]");
         } while (Column <= 0 && Column >= 9);
 
         do
         {
             Console.Write("Please enter row: ");
-            Row = Convert.ToInt32(Console.ReadLine());
+            string RowStr = Console.ReadLine();
+            if (Regex.Match(RowStr, $"[0-{BoardSizeX - 1}]").Success) Column = Convert.ToInt32(RowStr);
+            else if (Regex.Match(RowStr, "[^\\d]").Success) Console.WriteLine("You're input must be a number");
+            else Console.WriteLine($"not a valid input [0-{BoardSizeX}]");
         } while (Row >= 0 && Row <= 9);
         Console.WriteLine();
     }
@@ -60,9 +70,9 @@ class Program
 
     private static void SetUpBoard(ref char[,] Board)
     {
-        for (int Row = 0; Row < 10; Row++)
+        for (int Row = 0; Row < BoardSizeY; Row++)
         {
-            for (int Column = 0; Column < 10; Column++)
+            for (int Column = 0; Column < BoardSizeX; Column++)
             {
                 Board[Row, Column] = '-';
             }
@@ -93,9 +103,11 @@ class Program
         int Row = 0;
         int Column = 0;
         int HorV = 0;
-        foreach (var Ship in Ships)
+        int ShipArrPointer = 0;
+        for (int i = 0; i < ShipNumber; i++)
         {
             Valid = false;
+            if (ShipArrPointer > 4) ShipArrPointer = 0;
             while (Valid == false)
             {
                 Row = RandomNumber.Next(0, 10);
@@ -109,10 +121,11 @@ class Program
                 {
                     Orientation = 'h';
                 }
-                Valid = ValidateBoatPosition(Board, Ship, Row, Column, Orientation);
+                Valid = ValidateBoatPosition(Board, Ships[ShipArrPointer], Row, Column, Orientation);
             }
-            Console.WriteLine($"Computer placing the {Ship.Name} which is {Ship.Size} long");
-            PlaceShip(ref Board, Ship, Row, Column, Orientation);
+            Console.WriteLine($"Computer placing the {Ships[ShipArrPointer].Name} which is {Ships[ShipArrPointer].Size} long");
+            PlaceShip(ref Board, Ships[ShipArrPointer], Row, Column, Orientation);
+            ShipArrPointer++;
         }
     }
 
@@ -239,7 +252,8 @@ class Program
         {
             Console.Write("Please enter your choice: ");
             string ChoiceStr = Console.ReadLine();
-            if (ChoiceStr == "1" || ChoiceStr == "2" || ChoiceStr == "9") Choice = Convert.ToInt32(ChoiceStr);
+            if (Regex.Match(ChoiceStr, "[129]").Success) Choice = Convert.ToInt32(ChoiceStr);
+            else if (Regex.Match(ChoiceStr, "[^\\d]").Success) Console.WriteLine("You're input must be a number");
             else Console.WriteLine("Not a valid input. Try again");
         } while (Choice != 1 && Choice != 2 && Choice != 9);
         return Choice;
