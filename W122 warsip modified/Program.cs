@@ -5,7 +5,9 @@
 //Version Number 1.0
 
 using System;
+using System.Data;
 using System.IO;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 class Program
@@ -317,6 +319,20 @@ class Program
             {
                 LoadGame(TrainingGame, ref Board);
                 PlayGame(ref Board, ref Ships, Username());
+            }
+        }
+    }
+
+    private static void sonar(int Row, int Column, char[,] Board)
+    {
+        char[] Notships = { 'h', 'm', '-' };
+        int curRow = Row;
+        int curColumn = Column;
+        while (Notships.Contains(Board[curRow, curColumn]))
+        {
+            for (int i = 0; i < 9; i++)
+            {
+                if ()
             }
         }
     }
