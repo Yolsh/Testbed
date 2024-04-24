@@ -8,16 +8,38 @@ namespace W130_P2
 {
     public class Manager : Employee
     {
-        List<Driver> drivers;
+        private List<Employee> employees = new List<Employee>();
 
-        public Manager(List<Driver> inDrivers, string fullname, double startSalary) : base(fullname, startSalary)
+        public Manager(string fullname) : base(fullname, 30000)
         {
 
         }
 
-        public void AddEmployee(Driver inDriver)
+        public bool AddEmployee(Employee inEmployee)
         {
-            drivers.Add(inDriver);
+            if (!employees.Contains(inEmployee))
+            {
+                employees.Add(inEmployee);
+                return true;
+            }
+            return false;
+        }
+
+        public double GiveRaises(double rate)
+        {
+            this.GiveRaise(rate);
+            double total = this.GetMonthlyPay();
+            foreach (Employee employee in employees)
+            {
+                if (employee is Manager)
+                {
+                    Manager subManager = (Manager) employee;
+                    total += subManager.GiveRaises(rate);
+                }
+                employee.GiveRaise(rate);
+                total += employee.GetMonthlyPay();
+            }
+            return total;
         }
     }
 }
