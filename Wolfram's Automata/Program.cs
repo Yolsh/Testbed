@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace Wolfram_s_Automata
 {
@@ -10,42 +11,32 @@ namespace Wolfram_s_Automata
     {
         static void Main(string[] args)
         {
-            do
-            {
-                Console.WriteLine("Pick a Number?");
-                int key = int.Parse(Console.ReadLine());
-                CreateField(key);
-                Console.ReadKey();
-                Console.Clear();
-            } while (true);
-        }
+            Console.WindowWidth = 173;
+            Console.WindowHeight = 40;
+            Console.CursorVisible = false;
 
-        static void CreateField(int key)
-        {
-            List<int[]> stages = new List<int[]>();
+            Console.WriteLine("Pick a Number?");
+            int key = int.Parse(Console.ReadLine());
             int[] stage = new int[Console.WindowWidth / 2 - 1];
             stage[stage.Length / 2] = 1;
 
-            stages.Add(stage);
-
-            for (int i = 0; i < Console.WindowHeight - 2; i++)
+            while (true)
             {
-                stages.Add(Wolframs(key, stages[i]));
+                stage = CreateField(key, stage);
+                Thread.Sleep(20);
             }
-
-            DispResult(stages);
         }
 
-        static void DispResult(List<int[]> stages)
+        static int[] CreateField(int key, int[] stage)
         {
-            foreach (int[] stage in stages)
+            int[] NextStage = Wolframs(key, stage);
+
+            foreach (int point in NextStage)
             {
-                foreach (int point in stage)
-                {
-                    Console.Write(point == 1 ? "\u2588\u2588" : "  ");
-                }
-                Console.WriteLine();
+                Console.Write(point == 1 ? "\u2588\u2588" : "  ");
             }
+
+            return NextStage;
         }
 
         static int[] Wolframs(int num, int[] stage)
