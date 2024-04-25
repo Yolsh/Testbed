@@ -11,8 +11,28 @@ namespace Wolfram_s_Automata
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Pick a Number?");
-            int key = int.Parse(Console.ReadLine());
+            bool Successful = false;
+            int key = 0;
+
+            do
+            {
+                Console.WriteLine("Pick a Number? (0 - 255)");
+                try
+                {
+                    key = int.Parse(Console.ReadLine());
+                    Successful = true;
+                    if (key > 255 || key < 0)
+                    {
+                        Successful = false;
+                        Console.Clear();
+                    }
+                }
+                catch
+                {
+                    Console.Clear();
+                }
+            } while (!Successful);
+
             Console.CursorVisible = false;
             int[] stage = new int[Console.WindowWidth / 2 - 1];
             stage[stage.Length / 2] = 1;
