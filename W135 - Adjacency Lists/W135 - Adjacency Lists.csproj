@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{43372A5B-8AAC-44CB-BD4E-AC87DF57DCA9}</ProjectGuid>
+    <ProjectGuid>{5668D80C-9816-4441-9676-3CB3576D28E3}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>W134___Queues</RootNamespace>
-    <AssemblyName>W134 - Queues</AssemblyName>
+    <RootNamespace>W135___Adjacency_Lists</RootNamespace>
+    <AssemblyName>W135 - Adjacency Lists</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CircularQueue.cs" />
-    <Compile Include="LinearQueue.cs" />
-    <Compile Include="LinearShuffleQueue.cs" />
+    <Compile Include="MyBartonException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="IQueue.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
