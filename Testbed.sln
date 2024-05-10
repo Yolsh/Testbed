@@ -97,6 +97,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W133 - Recursion", "W133 - 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W134 - Queues", "W134 - Queues\W134 - Queues.csproj", "{43372A5B-8AAC-44CB-BD4E-AC87DF57DCA9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake", "Snake\Snake.csproj", "{C3DA2D5B-927A-4E87-B118-C48113C864E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wikipedia links", "Wikipedia links\Wikipedia links.csproj", "{B4BE32EC-A60A-43AD-BFB7-3924EF7BF031}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -291,6 +295,14 @@ Global
 		{43372A5B-8AAC-44CB-BD4E-AC87DF57DCA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43372A5B-8AAC-44CB-BD4E-AC87DF57DCA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43372A5B-8AAC-44CB-BD4E-AC87DF57DCA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3DA2D5B-927A-4E87-B118-C48113C864E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3DA2D5B-927A-4E87-B118-C48113C864E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3DA2D5B-927A-4E87-B118-C48113C864E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3DA2D5B-927A-4E87-B118-C48113C864E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4BE32EC-A60A-43AD-BFB7-3924EF7BF031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4BE32EC-A60A-43AD-BFB7-3924EF7BF031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4BE32EC-A60A-43AD-BFB7-3924EF7BF031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4BE32EC-A60A-43AD-BFB7-3924EF7BF031}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

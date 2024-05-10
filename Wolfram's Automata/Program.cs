@@ -39,8 +39,15 @@ namespace Wolfram_s_Automata
 
             while (true)
             {
-                stage = CreateField(key, stage);
-                Thread.Sleep(20);
+                do
+                {
+                    while (!Console.KeyAvailable)
+                    {
+                        stage = CreateField(key, stage);
+                        Thread.Sleep(20);
+                    }
+                } while (Console.ReadKey(true).Key != ConsoleKey.Spacebar);
+                Console.ReadKey();
             }
         }
 
