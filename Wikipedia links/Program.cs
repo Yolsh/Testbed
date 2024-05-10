@@ -40,8 +40,9 @@ namespace Wikipedia_links
             {
                 Console.WriteLine(GetPage(url));
             }
-            catch 
+            catch (Exception e)
             {
+                Console.WriteLine(e);
             }
         }
 
@@ -54,7 +55,7 @@ namespace Wikipedia_links
             HttpResponseMessage res = client.GetAsync(path).Result;
             string result = JsonSerializer.Serialize(res.Content);
             if (res.IsSuccessStatusCode) return result;
-            throw new Exception(result);
+            throw new Exception(res);
         }
     }
 }
