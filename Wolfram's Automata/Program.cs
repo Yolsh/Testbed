@@ -11,46 +11,71 @@ namespace Wolfram_s_Automata
     {
         static void Main(string[] args)
         {
-            Console.WindowWidth = 173;
-            Console.WindowHeight = 40;
-            Console.CursorVisible = false;
+            bool Successful = false;
+            int key = 0;
 
-            Console.WriteLine("Pick a Number?");
-            int key = int.Parse(Console.ReadLine());
+            do
+            {
+                Console.WriteLine("Pick a Number? (0 - 255)");
+                try
+                {
+                    key = int.Parse(Console.ReadLine());
+                    Successful = true;
+                    if (key > 255 || key < 0)
+                    {
+                        Successful = false;
+                        Console.Clear();
+                    }
+                }
+                catch
+                {
+                    Console.Clear();
+                }
+            } while (!Successful);
+
+            Console.CursorVisible = false;
             int[] stage = new int[Console.WindowWidth / 2 - 1];
             stage[stage.Length / 2] = 1;
 
             while (true)
             {
-                stage = CreateField(key, stage);
-                Thread.Sleep(20);
+                do
+                {
+                    while (!Console.KeyAvailable)
+                    {
+                        stage = CreateField(key, stage);
+                        Thread.Sleep(20);
+                    }
+                } while (Console.ReadKey(true).Key != ConsoleKey.Spacebar);
+                Console.ReadKey();
             }
         }
 
         static int[] CreateField(int key, int[] stage)
         {
-            int[] NextStage = Wolframs(key, stage);
 
-            foreach (int point in NextStage)
+            foreach (int point in stage)
             {
                 Console.Write(point == 1 ? "\u2588\u2588" : "  ");
             }
+            Console.WriteLine();
 
-            return NextStage;
+            stage = Wolframs(key, stage);
+            return stage;
         }
 
-        static int[] Wolframs(int num, int[] stage)
+        static string BinConv(int number)
         {
-            string BinConv(int n, string w = "")
+            string conv(int n, string w = "")
             {
                 if (n != 0)
                 {
-                    return BinConv(n / 2, w) + n % 2;
+                    return conv(n / 2, w) + n % 2;
                 }
                 return "";
             }
-            string Key = BinConv(num);
-            int[] nextStage = new int[stage.Length];
+
+            string Key = conv(number);
 
             if (Key.Length < 8)
             {
@@ -58,6 +83,13 @@ namespace Wolfram_s_Automata
                 for (int i = 0; i < 8 - Key.Length; i++) temp += "0";
                 Key = temp + Key;
             }
+            return Key;
+        }
+
+        static int[] Wolframs(int num, int[] stage)
+        {
+            string Key = BinConv(num);
+            int[] nextStage = new int[stage.Length];
 
             for (int i = 0; i < stage.Length; i++)
             {
