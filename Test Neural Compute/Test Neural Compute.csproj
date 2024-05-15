@@ -7,7 +7,7 @@
     <ProjectGuid>{527B7A66-17AE-4127-B733-FE9C9A31A324}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Test_Neural_Compute</RootNamespace>
-    <AssemblyName>Test_Neural_Compute</AssemblyName>
+    <AssemblyName>Test Neural Compute</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ParraCompute.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
