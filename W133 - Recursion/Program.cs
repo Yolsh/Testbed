@@ -60,14 +60,5 @@ namespace W133___Recursion
         static int BunnyEars(int n) => n == 0 ? 0 : n == 1 ? 2 : n % 2 == 0 ? 3 + BunnyEars(n - 1) : 2 + BunnyEars(n - 1);
         static int TriangleBlocks(int row) => row == 0 ? 1 : 2 + TriangleBlocks(row - 1);
         static int Eights(int n) => n < 10 ? n == 8 ? 1 : 0 : n % 10 == 8 ? (n / 10) % 100 == 8 ? 2 + Eights(n / 10) : 1 + Eights(n / 10) : 0 + Eights(n / 10);
-
-        static void recursionCountToN(int n)
-        {
-            Console.WriteLine(n);
-            if (n > 1)
-            {
-                recursionCountToN(n - 1);
-            }
-        }
     }
 }

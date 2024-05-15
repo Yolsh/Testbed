@@ -5,17 +5,17 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace W135___Adjacency_Lists
+namespace W135___Adjacency_Matrix
 {
     internal class Program
     {
         static List<string> Users;
-        static List<List<int>> Connections;
+        static int[,] Connections;
 
         static void Main(string[] args)
         {
             Users = new List<string>();
-            Connections = new List<List<int>>();
+            Connections = new int[Users.Count(),Users.Count()];
 
             while (true)
             {
@@ -77,7 +77,18 @@ namespace W135___Adjacency_Lists
             else if (!Users.Contains(name))
             {
                 Users.Add(name);
-                Connections.Add(new List<int>());
+                int[,] NewGrid = new int[Connections.GetLength(0) + 1, Connections.GetLength(1) + 1];
+
+                for (int i = 0; i < Connections.GetLength(0); i++)
+                {
+                    for (int j = 0; j < Connections.GetLength(1); j++)
+                    {
+                        NewGrid[i, j] = Connections[i, j];
+                    }
+                }
+
+                Connections = NewGrid;
+
                 return;
             }
             Console.Clear();
@@ -87,7 +98,7 @@ namespace W135___Adjacency_Lists
 
         static void MakeFriend()
         {
-            string User1 = "",User2 = "";
+            string User1 = "", User2 = "";
             try
             {
                 if (!GetNames(ref User1, ref User2)) return;
@@ -100,7 +111,7 @@ namespace W135___Adjacency_Lists
                 return;
             }
 
-            if (Connections[Users.IndexOf(User1)].Contains(Users.IndexOf(User2)))
+            if (Connections[Users.IndexOf(User1), Users.IndexOf(User2)] == 1)
             {
                 Console.Clear();
                 Console.WriteLine("That Person is already friends with you in the MyBarton network");
@@ -108,8 +119,8 @@ namespace W135___Adjacency_Lists
                 return;
             }
 
-            Connections[Users.IndexOf(User1)].Add(Users.IndexOf(User2));
-            Connections[Users.IndexOf(User2)].Add(Users.IndexOf(User1));
+            Connections[Users.IndexOf(User1), Users.IndexOf(User2)] = 1;
+            Connections[Users.IndexOf(User2), Users.IndexOf(User1)] = 1;
 
             Console.Clear();
             Console.WriteLine("Succesfully added new friend!");
@@ -118,7 +129,7 @@ namespace W135___Adjacency_Lists
 
         static void AreWeFriends()
         {
-            string User1 = "",User2 = "";
+            string User1 = "", User2 = "";
             try
             {
                 if (!GetNames(ref User1, ref User2)) return;
@@ -139,7 +150,7 @@ namespace W135___Adjacency_Lists
                 return;
             }
 
-            else if (Connections[Users.IndexOf(User1)].Contains(Users.IndexOf(User2)))
+            else if (Connections[Users.IndexOf(User1), Users.IndexOf(User2)] == 1)
             {
                 Console.Clear();
                 Console.WriteLine("You are Friends!!");
@@ -167,7 +178,7 @@ namespace W135___Adjacency_Lists
                 return;
             }
 
-            if (!Connections[Users.IndexOf(User1)].Contains(Users.IndexOf(User2)))
+            if (Connections[Users.IndexOf(User1), Users.IndexOf(User2)] == 0)
             {
                 Console.Clear();
                 Console.WriteLine("You are Not Friends");
@@ -177,11 +188,11 @@ namespace W135___Adjacency_Lists
 
             List<string> MutualFriends = new List<string>();
 
-            foreach (int con in Connections[Users.IndexOf(User1)])
+            for (int i = 0; i < Connections.GetLength(0); i++)
             {
-                if (Connections[Users.IndexOf(User2)].Contains(con))
+                if (Connections[i, Users.IndexOf(User1)] == 1 && Connections[i, Users.IndexOf(User2)] == 1)
                 {
-                    MutualFriends.Add(Users[con]);
+                    MutualFriends.Add(Users[i]);
                 }
             }
 
@@ -217,10 +228,10 @@ namespace W135___Adjacency_Lists
                 return;
             }
             Console.Clear();
-            if (Connections[Users.IndexOf(User1)].Contains(Users.IndexOf(User2)))
+            if (Connections[Users.IndexOf(User1), Users.IndexOf(User2)] == 1)
             {
-                Connections[Users.IndexOf(User1)].Remove(Users.IndexOf(User2));
-                Connections[Users.IndexOf(User2)].Remove(Users.IndexOf(User1));
+                Connections[Users.IndexOf(User1), Users.IndexOf(User2)] = 0;
+                Connections[Users.IndexOf(User2), Users.IndexOf(User1)] = 0;
                 Console.WriteLine("Sucessfully removed friendship");
             }
 
@@ -251,9 +262,9 @@ namespace W135___Adjacency_Lists
         static bool CheckDegrees(int n, string User1, string User2, int i = 0)
         {
             if (n == i) return false;
-            foreach (int con in Connections[Users.IndexOf(User1)])
+            for (int j = 0; j < Connections.GetLength(1); j++)
             {
-                if (Users[con] == User2)
+                if (Users[Connections[Users.IndexOf(User1), j]] == User2)
                 {
                     return true;
                 }
