@@ -18,7 +18,7 @@ namespace Test_Neural_Compute
             }
             Console.WriteLine();
 
-            ParraCompute compObj = new ParraCompute(2, 4, vals);
+            ParraCompute compObj = new ParraCompute(2, vals);
 
             compObj.CompileFile("Shader.hlsl");
             compObj.SetupBuffer();

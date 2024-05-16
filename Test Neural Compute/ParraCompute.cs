@@ -27,12 +27,12 @@ namespace Test_Neural_Compute
         private UnorderedAccessView uavs;
         private SharpDX.Direct3D11.Buffer buffer;
 
-        public ParraCompute(int inGSize, int inTSize, int[] data) 
+        public ParraCompute(int inGSize, int[] data) 
         {
-            groupSize = inGSize;
-            totalSize = inTSize;
-            elementByteSize = 4;
             parseData = data;
+            groupSize = inGSize;
+            totalSize = parseData.Length;
+            elementByteSize = 4;
             device = new Device(DriverType.Hardware, DeviceCreationFlags.SingleThreaded);
         }
 
