@@ -111,6 +111,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test Neural Compute", "Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Words with AQA Pre-Release", "Words with AQA Pre-Release\Words with AQA Pre-Release.csproj", "{F14EC28F-0CE3-4EBA-A9FA-7AB6AAB17361}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W142 - Exceptions 2", "W142 - Exceptions 2\W142 - Exceptions 2.csproj", "{4A66D8B8-9875-4738-BAA8-7236889AEEAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -333,6 +335,10 @@ Global
 		{F14EC28F-0CE3-4EBA-A9FA-7AB6AAB17361}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F14EC28F-0CE3-4EBA-A9FA-7AB6AAB17361}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F14EC28F-0CE3-4EBA-A9FA-7AB6AAB17361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A66D8B8-9875-4738-BAA8-7236889AEEAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A66D8B8-9875-4738-BAA8-7236889AEEAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A66D8B8-9875-4738-BAA8-7236889AEEAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A66D8B8-9875-4738-BAA8-7236889AEEAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
